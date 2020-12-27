@@ -1,0 +1,91 @@
+/* Global Styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+header{
+    height: 100%;
+    background: rgb(43,52,61);
+    background: linear-gradient(139deg, rgba(43,52,61,1) 25%, rgba(142,112,100,1) 88%);
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Nav Styles */
+nav{
+    flex: 1;
+    max-height: 7rem;
+    color: white;
+    border-bottom: solid 1px white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name{
+    font-family: 'Unica One', cursive;
+    margin: 5rem;
+}
+
+.brand-name:hover{
+    transform: scale(1.5);
+}
+
+.nav-list{
+    height: 100%;
+
+    display: flex;
+    list-style: none;
+}
+
+.nav-link{
+    height: 100%;
+    padding: 0 4rem;
+    
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover{
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+
+.cat{
+    background-color: #EFA683;
+    color: #262E35;
+    text-align: center;
+}
+
+.cat:hover{
+    background-color: #f08a5c;
+}
+
+/* Hero Styles */
+.hero{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #EFA683;
+}
+
+.model-image{
+    /* height: 80%;
+    width: auto; */
+}
