@@ -175,6 +175,35 @@ nav{
     padding: 1rem;
 }
 
+/* Product Image */
+.product-image-container{
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    color: rgba(255, 255, 255, 0.548);
+    border-bottom: solid 1px white;
+    text-align: right;
+}
+
+.product-ammount{
+    position: absolute;
+    right: 23%;
+    bottom: 50%;
+    z-index: 2;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-image{
+    height: 15vw;
+    width: auto;
+}
+
+.product-details{
+    padding: 0.5rem 0;
+}
+
 /* Hero Button */
 
 .our-story-button{
