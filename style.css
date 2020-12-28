@@ -8,13 +8,13 @@
 html,
 body{
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
     height: 100%;
     background: rgb(43,52,61);
     background: linear-gradient(139deg, rgba(43,52,61,1) 25%, rgba(142,112,100,1) 88%);
-    font-family: 'Roboto', sans-serif;
 
     display: flex;
     flex-direction: column;
@@ -23,6 +23,10 @@ header{
 a{
     text-decoration: none;
     color: white;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 /* Nav Styles */
@@ -36,6 +40,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+
 
 .brand-name{
     font-family: 'Unica One', cursive;
@@ -86,6 +91,122 @@ nav{
 }
 
 .model-image{
-    /* height: 80%;
-    width: auto; */
+    height: 80%;
+    width: auto;
 }
+
+/* Hero Title Subtitle */
+.hero-title{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 5rem;
+    color: #EFA683;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+}
+
+.hero-subtitle{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 5rem;
+    color: #EFA683;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    padding-left: 2.5rem;
+}
+
+.hero-subtitle2{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    font-size: 1rem;
+    width: 140px;
+    color: rgba(255, 255, 255, 0.555);
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero Banner */
+
+.hero-banner{
+    height: 30%;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #EFA683;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-product{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    padding: 1rem;
+    border-bottom: solid 1px black;
+    color: #141112;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-product h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 3vw;
+    padding: 1rem;
+}
+.banner-product p{
+    padding: 1rem;
+}
+
+.banner-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Hero Button */
+
+.our-story-button{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    animation: updown 2s ease infinite;
+}
+
+.hero-story-button{
+    border: solid 1px white;
+    border-radius: 100%;
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.5rem;
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-10%);
+    }
+  
+    50% {
+      transform: translateY(10%);
+    }
+  
+    100% {
+      transform: translateY(-10%);
+    }
+  }
