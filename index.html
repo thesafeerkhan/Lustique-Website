@@ -7,53 +7,124 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <!-- Google Fonts and Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&family=Unica+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/db92eae0af.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
+        <!-- Nav -->
         <nav>
             <div class="brand-name">
                 <a href="#"><h1>Lustique</h1></a>
             </div>
             <ul class="nav-list">
+                <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">PRODUCTS</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">RESULTS</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">JOURNAL</a></li>
                 <li class="nav-item"><a href="#" class="nav-link cat">VIEW CATALOG</a></li>
             </ul>
         </nav>
         <!-- Hero Section -->
         <section class="hero">
-            <img src="images/model.png" alt="" class="model-image">
-        </section>
-        <!-- Hero Title Subtitle -->
-        <h1 class="hero-title">*Blessing</h1>
-        <h1 class="hero-subtitle">for every skin.</h1>
-        <p class="hero-subtitle2">YOUR MIRCALE CARE FOR PERFECT SKIN</p>
-        <!-- Hero Banner -->
-        <div class="hero-banner">
-            <div class="banner-product">
-                <h1>Bioliq*</h1>
-                <p>Bioliq is our <span class="bold">patented unique</span> component for 100% beauty</p>
+            <!-- Hero Main -->
+            <div class="hero-main">
+                <img src="images/model.png" alt="" class="model-image">
+                <h1 class="hero-title">*Blossom</h1>
+                <h1 class="hero-subtitle">into the new you.</h1>
+                <p class="hero-subtitle2">YOUR MIRCALE CARE FOR PERFECT SKIN</p>
             </div>
-            <div class="banner-details">
-                <p>* First use effectiveness</p>
-                <p>ALL INGREDIENTS</p>
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="banner-product">
+                    <h1>Bioliq*</h1>
+                    <p>Bioliq is our <span class="bold">patented unique</span> component for 100% rejuvenated beauty.</p>
+                </div>
+                <div class="banner-details">
+                    <p>First use effectiveness</p>
+                    <p>ALL INGREDIENTS</p>
+                </div>
             </div>
-        </div>
-        <!-- Product Image -->
-        <p class="product-ammount">15+</p>
-        <div class="product-image-container">
-            <img src="images/product.png" alt="" class="product-image">
-            <p class="product-details">DOLCE FLOR</p>
-        </div>
-        <!-- Our Story Button -->
-            <a href="#" class="our-story-button">
+            <!-- Hero Products -->
+            <a href="#" class="hero-products">
+                <p class="product-ammount">15+</p>
+                <img src="images/product.png" alt="" class="product-image">
+                <p class="product-details">VIEW ALL PRODUCTS</p>
+            </a>
+            <!-- <a href="#" class="hero-products">
+                <p class="product-ammount">15+</p>
+                <img src="images/spa-massage.jpg" alt="" class="product-image">
+                <p class="product-details">VIEW ALL SERVICES</p>
+            </a> -->
+            <!-- Our Story Button -->
+            <a href="#" class="hero-button">
                 <p>Our Story</p>
                 <i class="fas fa-caret-down fa-lg hero-story-button"></i>
             </a>
-    </header> 
+        </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Services Section -->
+        <section id="services" class="wrapper">
+            <!-- Description -->
+            <div class="services-description-container">
+                <img src="images/customercare.jpg" alt="">
+                <div class="services-description">
+                    <h1>Service Perfection</h1>
+                    <p>Our team of colourists are trained in specialty services like balayage, foilyage, creative colours, highlighting, colour correcting and colour transformations.</p>
+                    <p>Our cutting team boast expertise in precision, textured, short and long hairstyling as well as barbering. We also have a team of experts who provide bridal/event hair and makeup, as well as Great Lengths hair extensions.</p>
+                </div>
+            </div>
+            <!-- Services -->
+            <div class="services-container">
+                <a href="#" class="service-container service1">
+                    <div class="service-image-container">
+                        <img src="images/haircuts.jpg" alt="">
+                    </div>
+                    <h2 class="service-title">Haircut</h2>
+                </a>
+                <a href="#" class="service-container service2">
+                    <div class="service-image-container">
+                        <img src="images/color.jpg" alt="">
+                    </div>
+                    <h2 class="service-title">Color</h2>                    
+                </a>
+                <a href="#" class="service-container service3">
+                    <div class="service-image-container">
+                        <img src="images/extensions.jpg" alt="">
+                    </div>
+                    <h2 class="service-title">Extensions</h2>
+                </a>
+                <a href="#" class="service-container service4">
+                    <div class="service-image-container">
+                        <img src="images/styling.jpg" alt="">
+                    </div>
+                    <h2 class="service-title">Styling/Makeup</h2>
+                </a>
+                <a href="#" class="service-container service5">
+                    <div class="service-image-container">
+                        <img src="images/treatments.jpg" alt="">
+                    </div>
+                    <h2 class="service-title">Treatments</h2>
+                </a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products">
+            products
+        </section>
+        <!-- About Section -->
+        <section class="about">
+            about
+        </section>
+        <!-- Journal Section -->
+        <section class="journal">
+            journal
+        </section>
+    </main>
 </body>
 </html>

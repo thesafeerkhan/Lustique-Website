@@ -22,23 +22,54 @@ header{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .bold{
     font-weight: bold;
 }
 
+.wrapper{
+    padding: 2rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    padding: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title{
+    font-size: 2rem;
+    padding: 5rem;
+    font-weight: 700;
+}   
+
 /* Nav Styles */
 nav{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: rgb(43,52,61);
+    background: linear-gradient(139deg, rgba(43,52,61,1) 25%, rgba(142,112,100,1) 88%);
+    
     flex: 1;
-    max-height: 7rem;
+    height: 7rem;
     color: white;
     border-bottom: solid 1px white;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav a {
+    color: white;
 }
 
 
@@ -84,14 +115,16 @@ nav{
 /* Hero Styles */
 .hero{
     flex: 1;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    color: #EFA683;
 }
 
 .model-image{
-    height: 80%;
+    position: relative;
+    top: 4px;
+    height: 80vh;
     width: auto;
 }
 
@@ -129,14 +162,18 @@ nav{
 }
 
 /* Hero Banner */
-
 .hero-banner{
     height: 30%;
     width: 40%;
+    min-width: 420px;
+    min-height: 230px;
+
     position: absolute;
     bottom: 0;
     left: 0;
+
     background-color: #EFA683;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,20 +212,27 @@ nav{
     padding: 1rem;
 }
 
-/* Product Image */
-.product-image-container{
+/* Products Section */
+.hero-products{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     right: 10%;
     bottom: 30%;
-    color: rgba(255, 255, 255, 0.548);
     border-bottom: solid 1px white;
     text-align: right;
+    color: rgba(255, 255, 255, 0.548);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-products:hover{
+    color: white;
 }
 
 .product-ammount{
     position: absolute;
-    right: 23%;
-    bottom: 50%;
+    right: 90%;
+    bottom: 70%;
     z-index: 2;
     font-size: 2rem;
     color: white;
@@ -196,8 +240,10 @@ nav{
 }
 
 .product-image{
-    height: 15vw;
-    width: auto;
+    height: 26vh;
+    width: 14vw;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 .product-details{
@@ -206,7 +252,7 @@ nav{
 
 /* Hero Button */
 
-.our-story-button{
+.hero-button{
     color: white;
     display: flex;
     justify-content: center;
@@ -238,4 +284,65 @@ nav{
     100% {
       transform: translateY(-10%);
     }
+  }
+
+  /* Services Section */
+  #services{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+  }
+
+  .services-container{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+  }
+
+  .service-container{
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.123), 0 6px 20px 0 rgba(0, 0, 0, 0.13);
+  }
+
+  .service-container:hover{
+      transform: scale(1.05);
+  }
+
+.service-image-container{
+      width: 17vw;
+      height: 40vh;
+      min-width: 300px;
+  }
+
+  .services-description-container{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem;
+  }
+
+  .services-description-container img{
+      flex: 1;
+  }
+
+  .services-description{
+      flex: 2;
+      margin: 2rem 0;
+      background-color: #DCBAB2;
+      color: white;
+      font-weight: bold;
+      font-size: 1.4rem;
+      min-width: 300px;
+  }
+
+  .services-description h1{
+      position: relative;
+      right: 50px;
+      color: black;
+      padding: 0;
+      font-weight: 900;
   }
